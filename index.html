@@ -24,12 +24,11 @@
                 MonResto
             </a>
 
-            <!-- Menu desktop -->
-            <ul class="hidden md:flex gap-6 items-center">
-                <li><a href="#" class="hover:text-orange-400">Accueil</a></li>
-                <li><a href="#" class="hover:text-orange-400">Menu</a></li>
-                <li><a href="#" class="hover:text-orange-400">À propos</a></li>
-                <li><a href="#" class="hover:text-orange-400">Contact</a></li>
+            <ul class="hidden md:flex md:justify-between items-center gap-6">
+                <li class="nav-item"><a href="#">Accueil</a></li>
+                <li class="nav-item"><a href="#">Menu</a></li>
+                <li class="nav-item"><a href="#">À propos</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
                 <li>
                     <a href="#" class="bg-orange-500 px-4 py-2 rounded-full hover:bg-orange-600 transition">
                         Commander
@@ -70,10 +69,10 @@
         <!-- la home section -->
         <div class="relative w-full h-screen">
 
-            <img src="./téléchargement (6).jpg" alt="Plat principal avec un burger et frites"
-                class="w-full h-[50vh] sm:h-[60vh] md:h-[90vh] h-screen object-cover">
+            <img id="carousel-image" alt="Plat principal avec un burger et frites"
+                class="w-full h-[50vh] sm:h-[60vh] md:h-[90vh] h-screen object-cover fade">
 
-            <div class="absolute inset-0 bg-black/80 flex flex-col items-center justify-center px-4">
+            <div class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center px-4">
                 <h1 class="flex flex-col items-center justify-center text-center space-y-2 mb-2">
                     <span class="text-white text-4xl md:text-4xl lg:text-6xl font-bold">
                         Meilleur Repas
@@ -102,6 +101,17 @@
                         Voir le menu
                     </button>
 
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="p-4 flex items-center">
+                        <button class="p-4 bg-orange-300 rounded-full hover:bg-orange-400 transition-all"
+                            id="left">&lt;</button>
+                    </div>
+                    <div class="p-4 flex items-center">
+                        <button class="p-4 bg-orange-300 rounded-full hover:bg-orange-400 transition-all"
+                            id="right">&gt;</button>
+                    </div>
                 </div>
             </div>
 
@@ -159,11 +169,11 @@
 
             <!-- les differents card -->
             <section aria-label="Menu populaire"
-                class="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+                class="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 ">
 
                 <!-- CARD -->
                 <div
-                    class="card bg-slate-800 rounded-lg shadow-md overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
+                    class="card rounded-lg shadow-xl overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
 
                     <!-- Image -->
                     <div class="relative overflow-hidden">
@@ -178,11 +188,11 @@
 
                     <!-- Contenu -->
                     <div class="p-4">
-                        <h3 class="text-white text-lg md:text-xl font-bold">
+                        <h3 class="text-gray-700 text-lg md:text-xl font-bold">
                             Signature Burger
                         </h3>
 
-                        <p class="text-gray-300 text-sm mt-1">
+                        <p class="text-gray-500 text-sm mt-1">
                             Burger juteux avec sauce spéciale, laitue, tomate et fromage
                         </p>
 
@@ -211,7 +221,7 @@
                 </div>
                 <!-- CARD -->
                 <div
-                    class="card bg-slate-800 rounded-lg shadow-md overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
+                    class="card rounded-lg shadow-xl overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
 
                     <!-- Image -->
                     <div class="relative overflow-hidden">
@@ -226,11 +236,11 @@
 
                     <!-- Contenu -->
                     <div class="p-4">
-                        <h3 class="text-white text-lg md:text-xl font-bold">
+                        <h3 class="text-gray-700 text-lg md:text-xl font-bold">
                             Signature Burger
                         </h3>
 
-                        <p class="text-gray-300 text-sm mt-1">
+                        <p class="text-gray-500 text-sm mt-1">
                             Burger juteux avec sauce spéciale, laitue, tomate et fromage
                         </p>
 
@@ -259,7 +269,7 @@
                 </div>
                 <!-- CARD -->
                 <div
-                    class="card bg-slate-800 rounded-lg shadow-md overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
+                    class="card rounded-lg shadow-xl overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
 
                     <!-- Image -->
                     <div class="relative overflow-hidden">
@@ -274,11 +284,11 @@
 
                     <!-- Contenu -->
                     <div class="p-4">
-                        <h3 class="text-white text-lg md:text-xl font-bold">
+                        <h3 class="text-gray-700 text-lg md:text-xl font-bold">
                             Signature Burger
                         </h3>
 
-                        <p class="text-gray-300 text-sm mt-1">
+                        <p class="text-gray-500 text-sm mt-1">
                             Burger juteux avec sauce spéciale, laitue, tomate et fromage
                         </p>
 
@@ -307,7 +317,7 @@
                 </div>
                 <!-- CARD -->
                 <div
-                    class="card bg-slate-800 rounded-lg shadow-md overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
+                    class="card rounded-lg shadow-xl overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
 
                     <!-- Image -->
                     <div class="relative overflow-hidden">
@@ -322,11 +332,11 @@
 
                     <!-- Contenu -->
                     <div class="p-4">
-                        <h3 class="text-white text-lg md:text-xl font-bold">
+                        <h3 class="text-gray-700 text-lg md:text-xl font-bold">
                             Signature Burger
                         </h3>
 
-                        <p class="text-gray-300 text-sm mt-1">
+                        <p class="text-gray-500 text-sm mt-1">
                             Burger juteux avec sauce spéciale, laitue, tomate et fromage
                         </p>
 
@@ -353,203 +363,100 @@
                     </div>
 
                 </div>
-                <!-- CARD -->
-                <div
-                    class="card bg-slate-800 rounded-lg shadow-md overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
-
-                    <!-- Image -->
-                    <div class="relative overflow-hidden">
-                        <img src="./téléchargement.jpg" alt="Signature Burger avec frites"
-                            class="w-full h-48 object-cover hover:scale-110 transition duration-500">
-
-                        <span
-                            class="absolute top-2 right-2 bg-orange-500 px-3 py-1 rounded-full text-sm text-white font-semibold">
-                            15.000 FCFA
-                        </span>
-                    </div>
-
-                    <!-- Contenu -->
-                    <div class="p-4">
-                        <h3 class="text-white text-lg md:text-xl font-bold">
-                            Signature Burger
-                        </h3>
-
-                        <p class="text-gray-300 text-sm mt-1">
-                            Burger juteux avec sauce spéciale, laitue, tomate et fromage
-                        </p>
-
-                        <!-- Footer -->
-                        <div class="flex items-center justify-between mt-4">
-
-                            <!-- Stars -->
-                            <div class="stars flex gap-1"></div>
-
-                            <!-- Button -->
-                            <button type="button"
-                                class="bg-orange-500 hover:bg-orange-600 active:scale-90 hover:scale-105 rounded-full px-3 py-1 text-sm text-white flex items-center gap-2 transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                                <span>Ajouter</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <circle cx="8" cy="21" r="1" />
-                                    <circle cx="19" cy="21" r="1" />
-                                    <path
-                                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                                </svg>
-                            </button>
-
-                        </div>
-                    </div>
-
-                </div>
-                <!-- CARD -->
-                <div
-                    class="card bg-slate-800 rounded-lg shadow-md overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
-
-                    <!-- Image -->
-                    <div class="relative overflow-hidden">
-                        <img src="./téléchargement.jpg" alt="Signature Burger avec frites"
-                            class="w-full h-48 object-cover hover:scale-110 transition duration-500">
-
-                        <span
-                            class="absolute top-2 right-2 bg-orange-500 px-3 py-1 rounded-full text-sm text-white font-semibold">
-                            15.000 FCFA
-                        </span>
-                    </div>
-
-                    <!-- Contenu -->
-                    <div class="p-4">
-                        <h3 class="text-white text-lg md:text-xl font-bold">
-                            Signature Burger
-                        </h3>
-
-                        <p class="text-gray-300 text-sm mt-1">
-                            Burger juteux avec sauce spéciale, laitue, tomate et fromage
-                        </p>
-
-                        <!-- Footer -->
-                        <div class="flex items-center justify-between mt-4">
-
-                            <!-- Stars -->
-                            <div class="stars flex gap-1"></div>
-
-                            <!-- Button -->
-                            <button type="button"
-                                class="bg-orange-500 hover:bg-orange-600 active:scale-90 hover:scale-105 rounded-full px-3 py-1 text-sm text-white flex items-center gap-2 transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                                <span>Ajouter</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <circle cx="8" cy="21" r="1" />
-                                    <circle cx="19" cy="21" r="1" />
-                                    <path
-                                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                                </svg>
-                            </button>
-
-                        </div>
-                    </div>
-
-                </div>
-                <!-- CARD -->
-                <div
-                    class="card bg-slate-800 rounded-lg shadow-md overflow-hidden transform opacity-0 translate-y-10 transition duration-700">
-
-                    <!-- Image -->
-                    <div class="relative overflow-hidden">
-                        <img src="./téléchargement.jpg" alt="Signature Burger avec frites"
-                            class="w-full h-48 object-cover hover:scale-110 transition duration-500">
-
-                        <span
-                            class="absolute top-2 right-2 bg-orange-500 px-3 py-1 rounded-full text-sm text-white font-semibold">
-                            15.000 FCFA
-                        </span>
-                    </div>
-
-                    <!-- Contenu -->
-                    <div class="p-4">
-                        <h3 class="text-white text-lg md:text-xl font-bold">
-                            Signature Burger
-                        </h3>
-
-                        <p class="text-gray-300 text-sm mt-1">
-                            Burger juteux avec sauce spéciale, laitue, tomate et fromage
-                        </p>
-
-                        <!-- Footer -->
-                        <div class="flex items-center justify-between mt-4">
-
-                            <!-- Stars -->
-                            <div class="stars flex gap-1"></div>
-
-                            <!-- Button -->
-                            <button type="button"
-                                class="bg-orange-500 hover:bg-orange-600 active:scale-90 hover:scale-105 rounded-full px-3 py-1 text-sm text-white flex items-center gap-2 transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                                <span>Ajouter</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <circle cx="8" cy="21" r="1" />
-                                    <circle cx="19" cy="21" r="1" />
-                                    <path
-                                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                                </svg>
-                            </button>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-        </div>
 
         </div>
 
         <!-- la section fistoire -->
 
-        <section class="p-12 md:flex block items-center justify-between" aria-labelledby="histoire-title">
-            <div class="mb-5 md:w-[45%]">
-                <h2 id="histoire-title" class="">
-                    <span class="text-black text-2xl md:text-4xl lg:text-4xl font-bold">Notre</span>
-                    <span class="text-orange-500 text-2xl md:text-4xl lg:text-4xl font-bold"> Histoire</span>
-                </h2>
+        <section class="py-5 bg-white">
+            <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-                <p class="text-base mt-2">Fondée en 2010, TasteBurst a commencé avec une mission simple : servir la
-                    restauration rapide la plus
-                    délicieuse
-                    et de haute qualité qui rassemble les familles et les communautés.
-                    Ce qui a commencé comme un petit restaurant local est devenu une destination incontournable pour les
-                    amateurs de
-                    cuisine.
-                </p>
-                <p class="text-base mt-2">Nous croyons que la restauration rapide ne doit pas compromettre la qualité.
-                    Chaque burger est préparé avec des ingrédients frais et locaux, et chaque plat est réalisé avec soin
-                    et attention aux détails pour une expérience savoureuse à chaque bouchée.
-                </p>
+                <!-- IMAGE + BADGE -->
+                <div class="relative">
+                    <img src="./téléchargement (4).jpg" alt="Nos plats" class="rounded-2xl shadow-xl w-full h-fite">
 
-                <div class="flex items-center justify-around mt-3">
-                    <div class="flex flex-col items-center justify-center">
-                        <span aria-hidden="true"
-                            class="flex items-center justify-center rounded-4xl bg-orange-300 w-11 h-11">👥</span>
-                        <h2 class="text-black text-xl font-bold">15+</h2>
-                        <p>clients satisfaits</p>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <span aria-hidden="true"
-                            class="flex items-center justify-center rounded-4xl bg-orange-300 w-11 h-11">🏆</span>
-                        <h2 class="text-black text-xl font-bold">50K+</h2>
-                        <p>récompenses remportées</p>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <span aria-hidden="true"
-                            class="flex items-center justify-center rounded-4xl bg-orange-300 w-11 h-11">🎉</span>
-                        <h2 class="text-black text-xl font-bold">25</h2>
-                        <p>années d’excellence</p>
+                    <!-- Badge dynamique -->
+                    <div class="absolute top-4 left-4 bg-orange-500 text-white px-4 py-2 rounded-full shadow">
+                        +<span id="total-plats">0</span> plats disponibles
                     </div>
                 </div>
-            </div>
 
-            <div class="md:w-[45%]">
-                <img src="./téléchargement (4).jpg" alt="Intérieur du restaurant MonResto"
-                    class="w-full h-auto rounded-lg">
+                <!-- CONTENU -->
+                <div>
+                    <h2 id="histoire-title" class="">
+                        <span class="text-black text-2xl md:text-4xl lg:text-4xl font-bold">Notre</span>
+                        <span class="text-orange-500 text-2xl md:text-4xl lg:text-4xl font-bold"> Histoire</span>
+                    </h2>
+
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Découvrez une cuisine savoureuse préparée avec des ingrédients frais
+                        et locaux. Notre menu évolue constamment pour vous offrir de nouvelles
+                        expériences culinaires.
+                    </p>
+
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Grâce à notre système de menu dynamique, vous pouvez explorer
+                        facilement toutes nos catégories de plats et commander en quelques clics.
+                    </p>
+
+                    <!-- STATISTIQUES -->
+                    <div class="grid grid-cols-3 gap-4 mb-6 text-center">
+                        <div class="bg-gray-100 p-4 rounded-xl">
+                            <p id="total-categories" class="text-2xl font-bold text-orange-500">25</p>
+                            <p class="text-sm text-gray-600">Catégories</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-xl">
+                            <p class="text-2xl font-bold text-orange-500">4.8</p>
+                            <p class="text-sm text-gray-600">Avis clients</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-xl">
+                            <p class="text-2xl font-bold text-orange-500">24/7</p>
+                            <p class="text-sm text-gray-600">Service</p>
+                        </div>
+                    </div>
+
+                    <!-- BOUTONS -->
+                    <div class="flex gap-4">
+                        <a href="#menu"
+                            class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition">
+                            Voir le menu
+                        </a>
+
+                        <a href="#contact"
+                            class="border border-orange-500 text-orange-500 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white transition">
+                            Réserver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50" id="galerie">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+                        Notre Galerie
+                    </h2>
+                    <p class="text-gray-600 mt-2">
+                        Découvrez quelques-uns de nos délicieux plats
+                    </p>
+                </div>
+
+                <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                        <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 cursor-pointer">
+
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <p class="text-white font-semibold">Plat gourmand</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -618,6 +525,7 @@
 
             </div>
         </section>
+
     </main>
 
     <script src="./script.js"></script>

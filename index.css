@@ -24,3 +24,47 @@ a:focus-visible {
   outline: 2px solid #f97316;
   outline-offset: 3px;
 }
+
+.fade {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+
+    width: 0;
+    height: 3px;
+    background-color: orange;
+
+    transition: width 0.4s ease;
+}
+
+/* Au survol */
+.nav-item:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease;
+}
