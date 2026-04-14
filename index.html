@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <title>MonResto — Accueil</title>
 </head>
@@ -15,12 +16,12 @@
 
     <!-- le contener principal -->
 
-    <nav class="sticky top-0 z-50 bg-black text-white px-6 py-4 shadow-md" aria-label="Navigation principale">
+    <nav class="sticky top-0 z-50 bg-orange-400 text-white px-6 py-4 shadow-md" aria-label="Navigation principale">
 
         <div class="flex items-center justify-between">
 
             <!-- Logo -->
-            <a href="#" class="text-xl font-bold text-orange-500 border-2 border-orange-400 p-2 md:p-3 inline-block">
+            <a href="#" class="text-xl font-bold text-wihte border-2 border-wihte p-2 md:p-3 inline-block">
                 MonResto
             </a>
 
@@ -156,7 +157,7 @@
         </div>
 
         <!-- la section menu -->
-        <div class="p-12">
+        <div class="p-10">
             <div class="flex flex-col items-center justify-center">
                 <h2>
                     <span class="text-black text-2xl md:text-4xl lg:text-4xl font-bold">Menu</span>
@@ -169,7 +170,7 @@
 
             <!-- les differents card -->
             <section aria-label="Menu populaire"
-                class="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 ">
+                class="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:px-6">
 
                 <!-- CARD -->
                 <div
@@ -436,7 +437,7 @@
             <div class="max-w-6xl mx-auto px-6">
 
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+                    <h2 class="text-orange-500 text-2xl md:text-4xl lg:text-4xl font-bold">
                         Notre Galerie
                     </h2>
                     <p class="text-gray-600 mt-2">
@@ -456,72 +457,146 @@
                         </div>
                     </div>
 
+                    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                        <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 cursor-pointer">
+
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <p class="text-white font-semibold">Plat gourmand</p>
+                        </div>
+                    </div>
+
+                    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                        <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 cursor-pointer">
+
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <p class="text-white font-semibold">Plat gourmand</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- la section des contacts -->
+        <!-- ******************************************************* -->
+        <!-- ******************************************************* -->
 
-        <section class="bg-slate-800 p-8" aria-labelledby="visitez-title">
-            <div class="flex flex-col items-center">
-                <h2 id="visitez-title" class="m-4">
-                    <span class="text-white text-2xl md:text-4xl lg:text-4xl font-bold">Visitez</span>
-                    <span class="text-orange-500 text-2xl md:text-4xl lg:text-4xl font-bold"> -nous</span>
-                </h2>
-                <p class="text-white text-lg text-center">Venez découvrir l’expérience TasteBurst dans l’un de nos
-                    établissements.</p>
+        <nav class="bottom-nav">
+            <a href="#">
+                <i class="fa fa-home"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-store"></i>
+                <span>Shop</span>
+            </a>
+
+            <!-- 🔥 Bouton central -->
+            <div class="center-btn">
+                <i class="fa fa-plus"></i>
             </div>
 
-            <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+            <a href="#">
+                <i class="fa fa-shopping-cart"></i>
+                <span>Cart</span>
+            </a>
 
-                <div
-                    class="flex flex-col items-center text-center bg-slate-700 rounded-lg p-5 hover:scale-105 transition duration-300">
-                    <span aria-hidden="true"
-                        class="flex items-center justify-center rounded-full bg-orange-300 w-12 h-12 text-xl">
-                        👥
-                    </span>
-                    <h2 class="text-white text-lg md:text-xl font-bold mt-3">
-                        123 Food Street
+            <a href="#">
+                <i class="fa fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+
+        <section
+            class=" bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 px-6 overflow-hidden">
+
+            <!-- 🔥 Effet lumière -->
+            <div class="absolute top-0 left-0 w-72 h-72 bg-orange-500 opacity-10 blur-3xl rounded-full"></div>
+            <div class="absolute bottom-0 right-0 w-72 h-72 bg-pink-500 opacity-10 blur-3xl rounded-full"></div>
+
+            <!-- Contenu -->
+            <div class="relative z-10">
+
+                <!-- Titre -->
+                <div class="text-center mb-14">
+                    <h2 class="text-3xl md:text-5xl font-extrabold tracking-wide">
+                        <span class="text-white">Visitez</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-500">
+                            -nous
+                        </span>
                     </h2>
-                    <p class="text-gray-300">
-                        Ville XYZ, DC 12345
+
+                    <p class="text-gray-400 mt-4 max-w-xl mx-auto leading-relaxed">
+                        Venez découvrir l’expérience
+                        <span class="text-orange-400 font-semibold">TasteBurst</span>
+                        dans l’un de nos établissements.
                     </p>
                 </div>
 
-                <div
-                    class="flex flex-col items-center text-center bg-slate-700 rounded-lg p-5 hover:scale-105 transition duration-300">
-                    <span aria-hidden="true"
-                        class="flex items-center justify-center rounded-full bg-orange-300 w-12 h-12 text-xl">
-                        🏆
-                    </span>
-                    <h2 class="text-white text-lg md:text-xl font-bold mt-3">
-                        Appelez-nous
-                    </h2>
-                    <p class="text-gray-300">(555) 123-FOOD</p>
-                    <p class="text-gray-300">(555) 123-3663</p>
+                <!-- 🔥 Conteneur responsive -->
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-10 max-w-5xl mx-auto">
+
+                    <!-- ITEM -->
+                    <div class="flex items-center gap-4 group md:pr-6">
+                        <div class="w-14 h-14 flex items-center justify-center rounded-full 
+                            bg-gradient-to-r from-orange-400 to-pink-500 text-xl shadow-lg
+                            group-hover:scale-110 transition duration-300">
+                            📍
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg group-hover:text-orange-400 transition">
+                                Adresse
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                123 Food Street, Ville XYZ
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Séparateur desktop -->
+                    <div class="hidden md:block w-px h-12 bg-gray-700"></div>
+
+                    <!-- ITEM -->
+                    <div class="flex items-center gap-4 group md:px-6">
+                        <div class="w-14 h-14 flex items-center justify-center rounded-full 
+                            bg-gradient-to-r from-orange-400 to-pink-500 text-xl shadow-lg
+                            group-hover:scale-110 transition duration-300">
+                            📞
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg group-hover:text-orange-400 transition">
+                                Téléphone
+                            </h3>
+                            <p class="text-gray-400 text-sm">(555) 123-FOOD</p>
+                        </div>
+                    </div>
+
+                    <!-- Séparateur desktop -->
+                    <div class="hidden md:block w-px h-12 bg-gray-700"></div>
+
+                    <!-- ITEM -->
+                    <div class="flex items-center gap-4 group md:pl-6">
+                        <div class="w-14 h-14 flex items-center justify-center rounded-full 
+                            bg-gradient-to-r from-orange-400 to-pink-500 text-xl shadow-lg
+                            group-hover:scale-110 transition duration-300">
+                            ⏰
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg group-hover:text-orange-400 transition">
+                                Horaires
+                            </h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Lun - Jeu : 10h - 22h <br>
+                                Ven - Dim : 10h - 23h
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-
-                <div
-                    class="flex flex-col items-center text-center bg-slate-700 rounded-lg p-5 hover:scale-105 transition duration-300">
-                    <span aria-hidden="true"
-                        class="flex items-center justify-center rounded-full bg-orange-300 w-12 h-12 text-xl">
-                        🎉
-                    </span>
-                    <h2 class="text-white text-lg md:text-xl font-bold mt-3">
-                        Horaires
-                    </h2>
-                    <p class="text-gray-300">Lundi - Jeudi : 10h - 22h</p>
-                    <p class="text-gray-300">Vendredi - Dimanche : 10h - 23h</p>
-                </div>
-
-            </div>
-
-            <div class="mt-5 text-white flex flex-col sm:flex-row gap-4 justify-center items-center">
-
-                <button type="button"
-                    class="w-full sm:w-auto text-center text-base sm:text-lg md:text-xl p-2 md:p-4 rounded-full bg-orange-500 hover:bg-orange-600 hover:scale-105 transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                    Nous vous attendons avec impatience pour vous servir le meilleur repas de votre vie !
-                </button>
 
             </div>
         </section>

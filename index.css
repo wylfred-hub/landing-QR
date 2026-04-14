@@ -68,3 +68,63 @@ a:focus-visible {
 .animate-fadeIn {
     animation: fadeIn 0.3s ease;
 }
+
+/* element pour gerer le bas de navigation vertion mobile */
+
+.bottom-nav {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        border-top: 1px solid #ddd;
+        z-index: 1000;
+    }
+}
+
+.bottom-nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #777;
+    font-size: 12px;
+}
+
+.bottom-nav i {
+    display: block;
+    font-size: 18px;
+}
+
+/* 🔥 Bouton central */
+.center-btn {
+    position: absolute;
+    top: -25px;
+    background: #ff2d75;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    font-size: 22px;
+}
+
+/* Hover */
+.bottom-nav a:hover {
+    color: #ff2d75;
+}
+
+/* 🔥 éviter que le contenu soit caché */
+body {
+    padding-bottom: 80px;
+}

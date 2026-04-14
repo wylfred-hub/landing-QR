@@ -105,29 +105,6 @@ async function main() {
 
 const plats = main()
 
-// const galleryData = [
-//     {
-//         image: "https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg",
-//         title: "Plat gourmand"
-//     },
-//     {
-//         image: "https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg",
-//         title: "Plat gourmand"
-//     },
-//     {
-//         image: "https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg",
-//         title: "Plat gourmand"
-//     },
-//     {
-//         image: "https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg",
-//         title: "Plat gourmand"
-//     },
-//     {
-//         image: "https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg",
-//         title: "Plat gourmand"
-//     }
-// ]
-
 const gallery = document.getElementById("gallery")
 
 galleryData.forEach(item => {
