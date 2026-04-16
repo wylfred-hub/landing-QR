@@ -43,7 +43,7 @@ a:focus-visible {
 
     width: 0;
     height: 3px;
-    background-color: orange;
+    background-color: rgb(252, 251, 249);
 
     transition: width 0.4s ease;
 }
@@ -103,7 +103,7 @@ a:focus-visible {
     font-size: 18px;
 }
 
-/* 🔥 Bouton central */
+/*  Bouton central */
 .center-btn {
     position: absolute;
     top: -25px;
@@ -124,7 +124,7 @@ a:focus-visible {
     color: #ff2d75;
 }
 
-/* 🔥 éviter que le contenu soit caché */
+/*  éviter que le contenu soit caché */
 body {
     padding-bottom: 80px;
 }

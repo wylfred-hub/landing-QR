@@ -30,6 +30,11 @@
                 <li class="nav-item"><a href="#">Menu</a></li>
                 <li class="nav-item"><a href="#">À propos</a></li>
                 <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item md:hidden">
+                    <a href="#">
+
+                    </a>
+                </li>
                 <li>
                     <a href="#" class="bg-orange-500 px-4 py-2 rounded-full hover:bg-orange-600 transition">
                         Commander
@@ -155,6 +160,81 @@
                 </svg>
             </div>
         </div>
+
+        <!-- section pour les diffent type de categorie -->
+        <section class="py-10 bg-white" id="categories">
+            <div class="max-w-6xl mx-auto px-4 md:px-6">
+
+                <!-- Titre -->
+                <div class="text-center mb-12">
+                    <h2 class="text-orange-500 text-2xl md:text-4xl font-bold">
+                        Nos Catégories
+                    </h2>
+                    <p class="text-gray-600 mt-2">
+                        Explorez nos différentes catégories de plats et boissons
+                    </p>
+                </div>
+
+                <!-- Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+
+                    <!-- Catégorie 1 -->
+                    <div
+                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
+                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-pizza-slice"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Pizza</h3>
+                    </div>
+
+                    <!-- Catégorie 2 -->
+                    <div
+                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
+                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-burger"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Fast Food</h3>
+                    </div>
+
+                    <!-- Catégorie 3 -->
+                    <div
+                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
+                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-ice-cream"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Desserts</h3>
+                    </div>
+
+                    <!-- Catégorie 4 -->
+                    <div
+                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
+                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Boissons chaudes</h3>
+                    </div>
+
+                    <!-- Catégorie 5 -->
+                    <div
+                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
+                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-wine-glass"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Boissons</h3>
+                    </div>
+
+                    <!-- Catégorie 6 -->
+                    <div
+                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
+                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-drumstick-bite"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Grillades</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <!-- la section menu -->
         <div class="p-10">
@@ -506,13 +586,12 @@
             </a>
 
             <a href="#">
-                <i class="fa fa-user"></i>
-                <span>Profile</span>
+                <i class="fa fa-qrcode"></i>
+                <span>Scan</span>
             </a>
         </nav>
 
-        <section
-            class=" bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 px-6 overflow-hidden">
+        <section class=" bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 px-6 overflow-hidden">
 
             <!-- 🔥 Effet lumière -->
             <div class="absolute top-0 left-0 w-72 h-72 bg-orange-500 opacity-10 blur-3xl rounded-full"></div>
