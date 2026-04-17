@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>MonResto — Accueil</title>
+    <title>MonResto — Menu</title>
 </head>
 
 <body class="bg-white font-[Poppins] m-0">
@@ -70,6 +70,7 @@
 
     </nav>
 
+
     <main class="bg-white font-[Poppins]">
 
         <!-- la home section -->
@@ -81,18 +82,13 @@
             <div class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center px-4">
                 <h1 class="flex flex-col items-center justify-center text-center space-y-2 mb-2">
                     <span class="text-white text-4xl md:text-4xl lg:text-6xl font-bold">
-                        Meilleur Repas
+                        Les différents Menus du jour
                     </span>
                     <span class="text-orange-400 text-2xl sm:text-lg md:text-2xl lg:text-4xl font-semibold">
-                        Fraîches et Rapides
+                        Nos saveurs journalière.
                     </span>
                 </h1>
 
-                <p class="text-2xl text-white text-center max-w-3xl mx-auto">Découvrez le parfait mélange de saveurs et
-                    de rapidité.</p>
-                <p class="text-2xl text-white text-center max-w-3xl mx-auto">Nos plats artisanaux et nos frites
-                    croustillantes sont préparés avec les meilleurs ingrédients, servis chauds et frais directement à
-                    votre table.</p>
 
                 <div class="mt-5 text-white flex flex-col sm:flex-row gap-4 justify-center items-center">
 
@@ -108,6 +104,7 @@
                             Voir le menu
                         </button>
                     </a>
+
                 </div>
 
                 <div class="flex gap-4">
@@ -122,44 +119,6 @@
                 </div>
             </div>
 
-            <div class="absolute bottom-0 w-full flex items-center justify-center gap-6 text-white py-3"
-                aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
-                    class="w-6 h-6 transition duration-300 hover:scale-150 hover:text-orange-400" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path d="M12 16H4a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4h-4.25" />
-                    <path d="M5 12a2 2 0 0 1-2-2 9 7 0 0 1 18 0 2 2 0 0 1-2 2" />
-                    <path d="M5 16a2 2 0 0 0-2 2 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 2 2 0 0 0-2-2Z" />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
-                    class="w-6 h-6 transition duration-300 hover:scale-150 hover:text-orange-400" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8" />
-                    <path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7" />
-                    <path d="m2.1 21.8 6.4-6.3" />
-                    <path d="m19 5-7 7" />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
-                    class="w-6 h-6 transition duration-300 hover:scale-150 hover:text-orange-400" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path d="M8 22h8" />
-                    <path d="M7 10h10" />
-                    <path d="M12 15v7" />
-                    <path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z" />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
-                    class="w-6 h-6 transition duration-300 hover:scale-150 hover:text-orange-400" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path d="M18 8a2 2 0 0 0 0-4 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0 0 4" />
-                    <path d="M10 22 9 8" />
-                    <path d="m14 22 1-14" />
-                    <path
-                        d="M20 8c.5 0 .9.4.8 1l-2.6 12c-.1.5-.7 1-1.2 1H7c-.6 0-1.1-.4-1.2-1L3.2 9c-.1-.6.3-1 .8-1Z" />
-                </svg>
-            </div>
         </div>
 
         <!-- section pour les diffent type de categorie -->
@@ -177,63 +136,56 @@
                 </div>
 
                 <!-- Grid -->
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+                <div id="cates" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5"></div>
 
-                    <!-- Catégorie 1 -->
-                    <div
-                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
-                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-pizza-slice"></i>
-                        </div>
-                        <h3 class="font-semibold text-gray-800">Pizza</h3>
-                    </div>
+                <script>
+                    const cates = document.getElementById('cates');
 
-                    <!-- Catégorie 2 -->
-                    <div
-                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
-                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-burger"></i>
-                        </div>
-                        <h3 class="font-semibold text-gray-800">Fast Food</h3>
-                    </div>
+                    const categories = [
+                        `<div class="bg-gray-200 p-6 rounded-2xl text-center 
+                            transition duration-700 hover:shadow-xl hover:-translate-y-2 cursor-pointer">
+                            <div class="text-orange-500 text-4xl mb-4">
+                                <i class="fa-solid fa-pizza-slice"></i>
+                            </div>
+                            <h3>Pizza</h3>
+                        </div>`,
 
-                    <!-- Catégorie 3 -->
-                    <div
-                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
-                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-ice-cream"></i>
-                        </div>
-                        <h3 class="font-semibold text-gray-800">Desserts</h3>
-                    </div>
+                        `<div class="bg-gray-200 p-6 rounded-2xl text-center 
+                            transition duration-700 hover:shadow-xl hover:-translate-y-2 cursor-pointer">
+                            <i class="fa-solid fa-burger text-orange-500 text-4xl mb-4"></i>
+                            <h3>Fast Food</h3>
+                        </div>`,
 
-                    <!-- Catégorie 4 -->
-                    <div
-                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
-                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-mug-hot"></i>
-                        </div>
-                        <h3 class="font-semibold text-gray-800">Boissons chaudes</h3>
-                    </div>
+                        `<div class="bg-gray-200 p-6 rounded-2xl text-center 
+                            transition duration-700 hover:shadow-xl hover:-translate-y-2 cursor-pointer">
+                            <i class="fa-solid fa-ice-cream text-orange-500 text-4xl mb-4"></i>
+                            <h3>Desserts</h3>
+                        </div>`,
 
-                    <!-- Catégorie 5 -->
-                    <div
-                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
-                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-wine-glass"></i>
-                        </div>
-                        <h3 class="font-semibold text-gray-800">Boissons</h3>
-                    </div>
+                        `<div class="bg-gray-200 p-6 rounded-2xl text-center 
+                            transition duration-700 hover:shadow-xl hover:-translate-y-2 cursor-pointer">
+                            <i class="fa-solid fa-mug-hot text-orange-500 text-4xl mb-4"></i>
+                            <h3>Boissons chaudes</h3>
+                        </div>`,
 
-                    <!-- Catégorie 6 -->
-                    <div
-                        class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition group cursor-pointer">
-                        <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-drumstick-bite"></i>
-                        </div>
-                        <h3 class="font-semibold text-gray-800">Grillades</h3>
-                    </div>
+                        `<div class="bg-gray-200 p-6 rounded-2xl text-center 
+                            transition duration-700 hover:shadow-xl hover:-translate-y-2 cursor-pointer">
+                            <i class="fa-solid fa-wine-glass text-orange-500 text-4xl mb-4"></i>
+                            <h3>Boissons</h3>
+                        </div>`,
 
-                </div>
+                        `<div class="bg-gray-200 p-6 rounded-2xl text-center 
+                            transition duration-700 hover:shadow-xl hover:-translate-y-2 cursor-pointer">
+                            <i class="fa-solid fa-drumstick-bite text-orange-500 text-4xl mb-4"></i>
+                            <h3>Grillades</h3>
+                        </div>`
+                    ];
+
+                    // 🔥 Injection simple
+                    categories.forEach(cate => {
+                        cates.innerHTML += cate;
+                    });
+                </script>
             </div>
         </section>
 
@@ -448,119 +400,6 @@
 
         </div>
 
-        <!-- la section fistoire -->
-
-        <section class="py-5 bg-white">
-            <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-                <!-- IMAGE + BADGE -->
-                <div class="relative">
-                    <img src="./téléchargement (4).jpg" alt="Nos plats" class="rounded-2xl shadow-xl w-full h-fite">
-
-                    <!-- Badge dynamique -->
-                    <div class="absolute top-4 left-4 bg-orange-500 text-white px-4 py-2 rounded-full shadow">
-                        +<span id="total-plats">0</span> plats disponibles
-                    </div>
-                </div>
-
-                <!-- CONTENU -->
-                <div>
-                    <h2 id="histoire-title" class="">
-                        <span class="text-black text-2xl md:text-4xl lg:text-4xl font-bold">Notre</span>
-                        <span class="text-orange-500 text-2xl md:text-4xl lg:text-4xl font-bold"> Histoire</span>
-                    </h2>
-
-                    <p class="text-gray-600 mb-4 leading-relaxed">
-                        Découvrez une cuisine savoureuse préparée avec des ingrédients frais
-                        et locaux. Notre menu évolue constamment pour vous offrir de nouvelles
-                        expériences culinaires.
-                    </p>
-
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Grâce à notre système de menu dynamique, vous pouvez explorer
-                        facilement toutes nos catégories de plats et commander en quelques clics.
-                    </p>
-
-                    <!-- STATISTIQUES -->
-                    <div class="grid grid-cols-3 gap-4 mb-6 text-center">
-                        <div class="bg-gray-100 p-4 rounded-xl">
-                            <p id="total-categories" class="text-2xl font-bold text-orange-500">25</p>
-                            <p class="text-sm text-gray-600">Catégories</p>
-                        </div>
-                        <div class="bg-gray-100 p-4 rounded-xl">
-                            <p class="text-2xl font-bold text-orange-500">4.8</p>
-                            <p class="text-sm text-gray-600">Avis clients</p>
-                        </div>
-                        <div class="bg-gray-100 p-4 rounded-xl">
-                            <p class="text-2xl font-bold text-orange-500">24/7</p>
-                            <p class="text-sm text-gray-600">Service</p>
-                        </div>
-                    </div>
-
-                    <!-- BOUTONS -->
-                    <div class="flex gap-4">
-                        <a href="#menu"
-                            class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition">
-                            Voir le menu
-                        </a>
-
-                        <a href="#contact"
-                            class="border border-orange-500 text-orange-500 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white transition">
-                            Réserver
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="py-20 bg-gray-50" id="galerie">
-            <div class="max-w-6xl mx-auto px-6">
-
-                <div class="text-center mb-12">
-                    <h2 class="text-orange-500 text-2xl md:text-4xl lg:text-4xl font-bold">
-                        Notre Galerie
-                    </h2>
-                    <p class="text-gray-600 mt-2">
-                        Découvrez quelques-uns de nos délicieux plats
-                    </p>
-                </div>
-
-                <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-9">
-
-                    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
-                        <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg"
-                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 cursor-pointer">
-
-                        <div
-                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <p class="text-white font-semibold">Plat gourmand</p>
-                        </div>
-                    </div>
-
-                    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
-                        <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg"
-                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 cursor-pointer">
-
-                        <div
-                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <p class="text-white font-semibold">Plat gourmand</p>
-                        </div>
-                    </div>
-
-                    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
-                        <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg"
-                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 cursor-pointer">
-
-                        <div
-                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <p class="text-white font-semibold">Plat gourmand</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
 
         <!-- ******************************************************* -->
         <!-- ******************************************************* -->
@@ -684,6 +523,8 @@
     </main>
 
     <script src="./script.js"></script>
+
+
 </body>
 
 </html>

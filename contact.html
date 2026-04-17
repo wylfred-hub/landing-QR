@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>MonResto — Menu</title>
+</head>
+
+<body class="bg-white font-[Poppins] m-0">
+
+    <!-- le contener principal -->
+
+    <nav class="sticky top-0 z-50 bg-orange-500 text-white px-6 py-4 shadow-md" aria-label="Navigation principale">
+
+        <div class="flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#" class="text-xl font-bold text-wihte border-2 border-wihte p-2 md:p-2 inline-block">
+                MonResto
+            </a>
+
+            <ul class="hidden md:flex md:justify-between items-center gap-6">
+                <li class="nav-item"><a href="./index.html">Accueil</a></li>
+                <li class="nav-item"><a href="./menu.html">Menu</a></li>
+                <li class="nav-item"><a href="./about.html">À propos</a></li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                <li class="nav-item md:hidden">
+                    <a href="#">
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="bg-orange-500 px-4 py-2 rounded-full hover:bg-orange-600 transition">
+                        Commander
+                    </a>
+                </li>
+            </ul>
+
+            <!-- mon menu burger -->
+            <button id="menu-btn" type="button"
+                class="md:hidden text-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+                aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+
+        </div>
+
+        <!-- Menu mobile -->
+        <div id="mobile-menu" class="hidden flex-col mt-4 space-y-3 md:hidden" role="menu" aria-label="Menu mobile">
+            <a href="./index.html"
+                class="block hover:text-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500">Accueil</a>
+            <a href="./menu.html"
+                class="block hover:text-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500">Menu</a>
+            <a href="./about.html"
+                class="block hover:text-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500">À
+                propos</a>
+            <a href="./contact.html"
+                class="block hover:text-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500">Contact</a>
+            <a href="#"
+                class="block bg-orange-500 text-center py-2 rounded-full hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500">
+                Commander
+            </a>
+        </div>
+
+    </nav>
+
+
+    <main class="bg-white font-[Poppins]">
+
+        <!-- la home section -->
+        <div class="relative w-full h-screen">
+
+            <img id="carousel-image" alt="Plat principal avec un burger et frites"
+                class="w-full h-[50vh] sm:h-[60vh] md:h-[90vh] h-screen object-cover fade">
+
+            <div class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center px-4">
+                <h1 class="flex flex-col items-center justify-center text-center space-y-2 mb-2">
+                    <span class="text-white text-4xl md:text-4xl lg:text-6xl font-bold">
+                        Les différents Menus du jour
+                    </span>
+                    <span class="text-orange-400 text-2xl sm:text-lg md:text-2xl lg:text-4xl font-semibold">
+                        Nos saveurs journalière.
+                    </span>
+                </h1>
+
+
+                <div class="mt-5 text-white flex flex-col sm:flex-row gap-4 justify-center items-center">
+
+                    <button type="button"
+                        class="w-full sm:w-auto text-center text-base sm:text-lg md:text-xl p-2 md:p-4 rounded-full bg-orange-500 hover:bg-orange-600 hover:scale-105 transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                        Commander en ligne
+                    </button>
+
+                    <!-- Bouton secondaire -->
+                    <a href="./menu.html">
+                        <button type="button"
+                            class="w-full sm:w-auto text-center text-base sm:text-lg md:text-xl p-2 md:p-4 border-2 border-white rounded-full hover:bg-white hover:text-black hover:scale-105 transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                            Voir le menu
+                        </button>
+                    </a>
+
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="p-4 flex items-center">
+                        <button class="p-4 bg-orange-300 rounded-full hover:bg-orange-400 transition-all"
+                            id="left">&lt;</button>
+                    </div>
+                    <div class="p-4 flex items-center">
+                        <button class="p-4 bg-orange-300 rounded-full hover:bg-orange-400 transition-all"
+                            id="right">&gt;</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- SECTION CONTACT -->
+        <!-- ========================= -->
+
+        <section class="py-20 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <!-- Titre -->
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-orange-500">
+                        Contactez-nous
+                    </h2>
+                    <p class="text-gray-600 mt-2">
+                        Une question ? Envoyez-nous un message
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+
+                    <!-- FORMULAIRE -->
+                    <form class="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+
+                        <input type="text" placeholder="Nom"
+                            class="w-full border p-3 rounded-lg focus:outline-orange-500">
+
+                        <input type="email" placeholder="Email"
+                            class="w-full border p-3 rounded-lg focus:outline-orange-500">
+
+                        <textarea placeholder="Message" rows="5"
+                            class="w-full border p-3 rounded-lg focus:outline-orange-500"></textarea>
+
+                        <button type="submit"
+                            class="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition">
+                            Envoyer
+                        </button>
+
+                    </form>
+
+                    <!-- INFOS -->
+                    <div class="flex flex-col justify-center gap-6">
+
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-location-dot text-orange-500 text-xl"></i>
+                            <span>Douala, Cameroun</span>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-phone text-orange-500 text-xl"></i>
+                            <span>+237 6 99 99 99 99</span>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-envelope text-orange-500 text-xl"></i>
+                            <span>contact@monresto.com</span>
+                        </div>
+
+                        <!-- Réseaux -->
+                        <div class="flex gap-4 mt-4">
+                            <i class="fa-brands fa-facebook text-2xl cursor-pointer hover:text-orange-500"></i>
+                            <i class="fa-brands fa-instagram text-2xl cursor-pointer hover:text-orange-500"></i>
+                            <i class="fa-brands fa-whatsapp text-2xl cursor-pointer hover:text-orange-500"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ******************************************************* -->
+        <!-- ******************************************************* -->
+
+        <nav class="bottom-nav">
+            <a href="#">
+                <i class="fa fa-home"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-store"></i>
+                <span>Shop</span>
+            </a>
+
+            <!-- 🔥 Bouton central -->
+            <div class="center-btn">
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <a href="#">
+                <i class="fa fa-shopping-cart"></i>
+                <span>Cart</span>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-qrcode"></i>
+                <span>Scan</span>
+            </a>
+        </nav>
+
+        <section class=" bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 px-6 overflow-hidden">
+
+            <!-- 🔥 Effet lumière -->
+            <div class="absolute top-0 left-0 w-72 h-72 bg-orange-500 opacity-10 blur-3xl rounded-full"></div>
+            <div class="absolute bottom-0 right-0 w-72 h-72 bg-pink-500 opacity-10 blur-3xl rounded-full"></div>
+
+            <!-- Contenu -->
+            <div class="relative z-10">
+
+                <!-- Titre -->
+                <div class="text-center mb-14">
+                    <h2 class="text-3xl md:text-5xl font-extrabold tracking-wide">
+                        <span class="text-white">Visitez</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-500">
+                            -nous
+                        </span>
+                    </h2>
+
+                    <p class="text-gray-400 mt-4 max-w-xl mx-auto leading-relaxed">
+                        Venez découvrir l’expérience
+                        <span class="text-orange-400 font-semibold">TasteBurst</span>
+                        dans l’un de nos établissements.
+                    </p>
+                </div>
+
+                <!-- 🔥 Conteneur responsive -->
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-10 max-w-5xl mx-auto">
+
+                    <!-- ITEM -->
+                    <div class="flex items-center gap-4 group md:pr-6">
+                        <div class="w-14 h-14 flex items-center justify-center rounded-full 
+                            bg-gradient-to-r from-orange-400 to-pink-500 text-xl shadow-lg
+                            group-hover:scale-110 transition duration-300">
+                            <i class="fa-regular fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg group-hover:text-orange-400 transition">
+                                Adresse
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                123 Food Street, Ville XYZ
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Séparateur desktop -->
+                    <div class="hidden md:block w-px h-12 bg-gray-700"></div>
+
+                    <!-- ITEM -->
+                    <div class="flex items-center gap-4 group md:px-6">
+                        <div class="w-14 h-14 flex items-center justify-center rounded-full 
+                            bg-gradient-to-r from-orange-400 to-pink-500 text-xl shadow-lg
+                            group-hover:scale-110 transition duration-300">
+                            <i class="fa-regular fa-phone-arrow-down-left"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg group-hover:text-orange-400 transition">
+                                Téléphone
+                            </h3>
+                            <p class="text-gray-400 text-sm">(555) 123-FOOD</p>
+                        </div>
+                    </div>
+
+                    <!-- Séparateur desktop -->
+                    <div class="hidden md:block w-px h-12 bg-gray-700"></div>
+
+                    <!-- ITEM -->
+                    <div class="flex items-center gap-4 group md:pl-6">
+                        <div class="w-14 h-14 flex items-center justify-center rounded-full 
+                            bg-gradient-to-r from-orange-400 to-pink-500 text-xl shadow-lg
+                            group-hover:scale-110 transition duration-300">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg group-hover:text-orange-400 transition">
+                                Horaires
+                            </h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Lun - Jeu : 10h - 22h <br>
+                                Ven - Dim : 10h - 23h
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>

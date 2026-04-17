@@ -82,14 +82,6 @@ displayImage()
 // --------------------------------------------------------------------------
 // --------------------------------------------------------------------------
 
-// async function getPlats() {
-//     const res = await fetch('https://cdn.pixabay.com/photo/random')
-//     const plats = await res.json()
-//     return plats
-// }
-// const plats = getPlats()
-// console.log(plats.message)
-
 async function getPlats() {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
     const data = await res.json()
@@ -147,3 +139,7 @@ gallery.addEventListener("click", function(e) {
         document.body.appendChild(modal)
     }
 })
+
+// onglet menu -: afficharge au scroll
+
+

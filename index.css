@@ -123,8 +123,3 @@ a:focus-visible {
 .bottom-nav a:hover {
     color: #ff2d75;
 }
-
-/*  éviter que le contenu soit caché */
-body {
-    padding-bottom: 80px;
-}
